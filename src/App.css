@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a,
+h2,
+button {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  /* font-size: 16px; */
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +52,106 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  background-color: #192a56;
+  height: 60px;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: inline-flex;
+}
+
+.nav {
+  display: inline-flex;
+  align-items: center;
+
+  width: 80%;
+  margin: auto;
+  /* justify-content: center; */
+}
+
+.list {
+  margin-left: 30px;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  /* background-color: red; */
+}
+
+li {
+  color: white;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.table {
+  width: 80%;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+/* add product input form */
+.add-button {
+  margin-left: 20px;
+  padding: 8px 0;
+  background-color: #0652dd;
+  border-radius: 5px;
+}
+.input-form {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 5px 15px;
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+}
+
+li {
+  font-weight: bold;
+}
+
+.search {
+  display: inline-flex;
+  background-color: violet;
+}
+
+.search-input input {
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  margin-left: 500px;
+  color: black;
 }

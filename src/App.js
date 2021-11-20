@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { UserContext } from "./UserContext";
+
+import Navbar from "./components/Navbar";
+import ColorFlip from "./projects/ColorFlip";
+import Counter from "./projects/Counter";
+import Review from "./projects/Review";
 
 function App() {
+  const [value, setValue] = useState("this is context");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UserContext.Provider value={{ value, setValue }}>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/colorflip" component={ColorFlip} />
+            <Route path="/counter" component={Counter} />
+            <Route path="/review" component={Review} />
+          </Switch>
+        </Router>
+      </UserContext.Provider>
     </div>
   );
 }
