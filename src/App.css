@@ -155,3 +155,93 @@ li {
   margin-left: 500px;
   color: black;
 }
+
+/* --------Password Generator---------- */
+.password-generator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-generator-card {
+  margin-top: 200px;
+  width: 400px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+}
+
+.password-generator-card > input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.password-generator-card > h2 {
+  color: black;
+}
+
+.password-generator-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+.todo {
+}
+
+.todo-top {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-color: #20bf6b;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > input {
+  width: 400px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.form > button {
+  margin-left: 10px;
+  padding: 9px 20px 9px 20px;
+  background: none;
+  border: 1px solid white;
+}
+
+.todo-bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-bottom-container > h2 {
+  color: gray;
+  text-align: center;
+}
+
+.todo-bottom-container {
+  width: 35%;
+}
+
+.todo-content {
+  display: flex;
+}
+
+.todo-text-content {
+  padding: 10px;
+  background-color: #f5f6fa;
+  width: 100%;
+}
+
+.todo-delete-option {
+  padding: 10px;
+}

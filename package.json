@@ -15,8 +15,9 @@
     "axios": "^0.24.0",
     "graphql": "^15.3.0",
     "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "^16.13.1",
-    "react-material-ui-carousel": "^2.3.8",
+    "react-material-ui-carousel": "^3.0.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },

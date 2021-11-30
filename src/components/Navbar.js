@@ -23,8 +23,11 @@ export default class Navbar extends React.Component {
                 <li>Review</li>
               </Link>
 
-              <Link to="/add" style={{}}>
-                <li>Todo app </li>
+              <Link to="/random-password" style={{}}>
+                <li>Password Generator </li>
+              </Link>
+              <Link to="/todo" style={{}}>
+                <li>Todo App </li>
               </Link>
             </ul>
           </nav>
