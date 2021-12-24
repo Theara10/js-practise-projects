@@ -245,3 +245,59 @@ button {
 .todo-delete-option {
   padding: 10px;
 }
+
+/* -----Image filter-------- */
+
+.image-filter {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.image-filter > img {
+  margin-top: 30px;
+}
+
+.image-gray {
+  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.image-blur {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+
+.image-buttons > button {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+/* ----------Weather------------ */
+
+.weather {
+  text-align: center;
+  background-image: url("https://nomadicboys.com/wp-content/uploads/2021/04/Phnom-Penh-travel-itinerary-1120x630.jpg");
+  height: 100vh;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.weather-content {
+  margin-top: 30px;
+}
+.weather-content > input {
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+img {
+  margin-top: 30px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 46px;
+  color: white;
+}

@@ -9,6 +9,8 @@ import Counter from "./projects/Counter";
 import Review from "./projects/Review";
 import PasswordGenerator from "./projects/PasswordGenerator";
 import Todo from "./projects/Todo";
+import ImageFilter from "./projects/ImageFilter";
+import Weather from "./projects/Weather";
 
 function App() {
   const [value, setValue] = useState("this is context");
@@ -23,6 +25,8 @@ function App() {
             <Route path="/review" component={Review} />
             <Route path="/random-password" component={PasswordGenerator} />
             <Route path="/todo" component={Todo} />
+            <Route path="/image" component={ImageFilter} />
+            <Route path="/weather" component={Weather} />
           </Switch>
         </Router>
       </UserContext.Provider>
