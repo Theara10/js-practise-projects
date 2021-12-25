@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 
 const api = {
   key: "bba0f44227592a2e1ef392aa581f1692",
-  base: "https://api.openweathermap.org/data/2.5",
+  base: "https://api.openweathermap.org/data/2.5/",
 };
 function Weather() {
-  const [query, setQuery] = useState("moscow");
+  const [query, setQuery] = useState("Moscow");
   const [weather, setWeather] = useState("");
 
   useEffect(() => {
-    fetch(`${api.base}weather?q=${query}&unit=metric&APPID=${api.key}`)
+    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
       .then((res) => res.json())
       .then((x) => console.log(x));
   }, []);
