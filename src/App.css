@@ -38,7 +38,6 @@ button {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -300,4 +299,33 @@ h3 {
   margin-top: 20px;
   font-size: 46px;
   color: white;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+/* ----------Quiz---------- */
+
+.quiz {
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-card {
+  height: 600px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black !important;
+}
+
+.quiz-card > p {
+  color: black !important;
+}
+input {
+  color: black !important;
 }

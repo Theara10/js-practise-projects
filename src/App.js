@@ -11,12 +11,13 @@ import PasswordGenerator from "./projects/PasswordGenerator";
 import Todo from "./projects/Todo";
 import ImageFilter from "./projects/ImageFilter";
 import Weather from "./projects/Weather";
+import Quiz from "./projects/Quiz";
 
 function App() {
   const [value, setValue] = useState("this is context");
   return (
     <div>
-      <UserContext.Provider value={{ value, setValue }}>
+      <UserContext.Provider value={value}>
         <Router>
           <Navbar />
           <Switch>
@@ -27,6 +28,7 @@ function App() {
             <Route path="/todo" component={Todo} />
             <Route path="/image" component={ImageFilter} />
             <Route path="/weather" component={Weather} />
+            <Route path="/quiz" component={Quiz} />
           </Switch>
         </Router>
       </UserContext.Provider>

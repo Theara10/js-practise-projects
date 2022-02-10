@@ -32,6 +32,9 @@ export default class Navbar extends React.Component {
               <Link to="/weather" style={{}}>
                 <li>Weather </li>
               </Link>
+              <Link to="/quiz" style={{}}>
+                <li>Quiz </li>
+              </Link>
             </ul>
           </nav>
         </div>
