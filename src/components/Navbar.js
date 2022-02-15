@@ -35,6 +35,9 @@ export default class Navbar extends React.Component {
               <Link to="/quiz" style={{}}>
                 <li>Quiz </li>
               </Link>
+              <Link to="/stopwatch" style={{}}>
+                <li>Stopwatch </li>
+              </Link>
             </ul>
           </nav>
         </div>

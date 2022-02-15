@@ -12,6 +12,7 @@ import Todo from "./projects/Todo";
 import ImageFilter from "./projects/ImageFilter";
 import Weather from "./projects/Weather";
 import Quiz from "./projects/Quiz";
+import Stopwatch from "./projects/Stopwatch";
 
 function App() {
   const [value, setValue] = useState("this is context");
@@ -29,6 +30,7 @@ function App() {
             <Route path="/image" component={ImageFilter} />
             <Route path="/weather" component={Weather} />
             <Route path="/quiz" component={Quiz} />
+            <Route path="/stopwatch" component={Stopwatch} />
           </Switch>
         </Router>
       </UserContext.Provider>
